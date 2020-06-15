@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="https://lh3.googleusercontent.com/proxy/AI0lfJTi6_-MSh-86uHpmJdt3X58Zm55MiOLeDKEc-C2zAyN9SnpHE9XCoWPXjpK8GRWvYya2XgNgBcWP96Z7xgnBzZ_MXkgLqs7I-I8xkLEjVh17WCqtcqiQ_Zgl22PfJYBpgdVqrE">
+    <title>Shop Page</title>
+    <style>
+      hr {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!--Copy This Lines`-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <p class="d-none d-lg-block col-md-3" style="color: white; font-size: 18px;">GMail: vardan.davtyan.y@tumo.org</p>
+      <p class="d-none d-lg-block col-md-3" style="color: white; font-size: 18px;">Welcome To Our Store</p>
+      <div class="input-group col-6 col-sm-6 col-md-4 col-lg-2">
+        <select title="Language" class="custom-select" id="inputGroupSelect" aria-label="Example select with button addon">
+        <option selected>English</option>
+          <option>Russian</option>
+          <option>French</option>
+          <option>Armenian</option>
+          <option>Chinese</option>
+        </select>
+      </div>
+      <div class="input-group col-6 col-sm-6 col-lg-2">
+        <select title="Currency" class="custom-select" id="inputGroupSelect" aria-label="Example select with button addon">
+          <option selected>USD</option>
+          <option>AMD</option>
+          <option>RUB</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary d-none d-md-block col-sm-2">
+        Basket: <span class="badge badge-pill badge-light">3</span>
+        <span class="sr-only">wishes count</span>
+      </button>
+    </nav>
+    <nav class="navbar  navbar-light border-top border-bottom" >
+      <a href="home.html"><h1 class="navbar-brand" onclick="" style="font-size: 23px; color:white; padding:8px;background-color:rgb(0, 81, 128); border-radius: 7.5px; cursor:pointer;">Online Shop</h1></a>
+      <form class="form-inline my-2 my-lg-0 ">
+      <input class="d-none d-md-block form-control mr-sm-2" style="width:320px;" type="search" placeholder="Search Products..." aria-label="Search">
+      <button class="d-none d-md-block btn btn-outline-primary my-2 my-sm-0" type="submit" style="margin-right:18px;">Search</button>
+      <div class="dropdown">
+        <button type="button" title="User" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white; background-color: rgb(0, 81, 128);">
+         My Account
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#regModal">Register</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item "href="#">Basket</a>
+          <a class="dropdown-item" href="#">Credit Card</a>
+          <a class="dropdown-item" href="#">Sign Out</a>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse col-12" id="navbarTogglerDemo01">
+        <div class="dropdown d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Gaming
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">Gaming PC</a>
+            <a class="dropdown-item"href="shop.html">PS4</a>
+            <a class="dropdown-item" href="shop.html">Xbox One</a>
+            <a class="dropdown-item" href="shop.html">Nintendo Switch</a>
+            <a class="dropdown-item" href="shop.html">HTC Vive</a>
+          </div>
+        </div>
+        <div class="dropdownd-none d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            For IT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">HP Computers For Programming</a>
+            <a class="dropdown-item"href="shop.html">MacBooks</a>
+            <a class="dropdown-item" href="shop.html">Computers For Game Development</a>
+            <a class="dropdown-item" href="shop.html">Huawei</a>
+          </div>
+        </div>
+        <div class="dropdown d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Prog-ing Books
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">Jeffrey Richter 'CLR via C#'</a>
+            <a class="dropdown-item"href="shop.html">Andrew Troelsen 'Pro CS 7'</a>
+            <a class="dropdown-item" href="shop.html">David Flanagan 'JavaScript The Definitive Guide'</a>
+            <a class="dropdown-item" href="shop.html">View All Books...</a>
+          </div>
+        </div>
+        <div class="dropdown d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Accessories
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">IOS MAC Chargers</a>
+            <a class="dropdown-item"href="shop.html">Android JoySticks</a>
+            <a class="dropdown-item" href="shop.html">VR and AR</a>
+            <a class="dropdown-item"href="shop.html">Keyboards</a>
+            <a class="dropdown-item"href="shop.html">Mouses</a>
+            <a class="dropdown-item"href="shop.html">HeadPhones</a>
+            <a class="dropdown-item"href="shop.html">MicroPhones</a>
+            <a class="dropdown-item"href="shop.html">Monitors</a>
+          </div>
+        </div>
+        <div class="dropdown d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PC Parts
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">RTX 2080 ti</a>
+            <a class="dropdown-item" href="shop.html">Core i9</a>
+            <a class="dropdown-item"href="shop.html">Intel Core i5</a>
+            <a class="dropdown-item"href="shop.html">Asus ROG 30inch</a>
+            <a class="dropdown-item"href="shop.html">GTX 1080 ti</a>
+            <a class="dropdown-item"href="shop.html">AMD Ryzen</a>
+            <a class="dropdown-item"href="shop.html">Razer Case</a>
+            <a class="dropdown-item"href="shop.html">Intel Core i7</a>
+          </div>
+        </div>
+        <div class="dropdown d-none d-md-block col-2" title="Short Category">
+          <button style="margin-top: 5px;"class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            GameDev
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="shop.html">Create Games with Unity 5</a>
+            <a class="dropdown-item" href="shop.html">Create Games with Cry Engine</a>
+            <a class="dropdown-item"href="shop.html">Create Games with Unreal Egnine 4</a>
+            <a class="dropdown-item" href="shop.html">Create Games with Godot</a>
+            <a class="dropdown-item" href="shop.html">Create Games with Construct 2</a>
+            <a class="dropdown-item" href="shop.html">Create Games with Corona SDK</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--To This Lines-->
+
+    <main class="bg-light"> <br>
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb" class="row">
+                <ol class="breadcrumb mt-3 mr-auto col-12 col-lg-4">
+                  <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="shop.html">Categories</a></li>
+                  <li class="breadcrumb-item"><a href="shop.html">Gaming PC</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Asus Predator</li>
+                </ol>
+                <form action="" class="form-inline col-12 col-sm-6 col-lg-4 ">
+                    <label for="sortBy" class="mr-2">Sort By: </label>
+                    <select class="custom-select" id="sortBy">
+                        <option value="1">Price: Low to High</option>
+                        <option value="2">Price: High to Low</option>
+                        <option value="3">Most Rated</option>
+                        <option value="4">FREE</option>
+                    </select>
+                </form>
+                <form action="" class="form-inline col-12 col-sm-6 col-lg-4 ">
+                    <label for="sortBy" class="mr-2">Filter By: </label>
+                    <select class="custom-select" id="sortBy">
+                        <option value="1">PC For AAA Games</option>
+                        <option value="2">PC For Indie Games</option>
+                        <option value="3">PC For Online Games</option>
+                        <option value="3">PC For Retro Games</option>
+                    </select>
+                </form>
+            </nav><br>
+            <div class="col-12"> <h2 class="font-weight-bold" style="color:deepskyblue; font-size: 42px;">Asus Predator 64GB RAM 1TB SSD</h2> </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-3 col-md-3 col-lg-3 col-xl-2">
+                            <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="https://img1-327a.kxcdn.com/DataImage.ashx/9472637"><img class="img-fluid" src="https://img1-327a.kxcdn.com/DataImage.ashx/9472637"></a>
+                            <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="https://itc.ua/wp-content/uploads/2016/04/Acer_Predator_G6_intro_770-2.jpg"><img class="img-fluid" src="https://itc.ua/wp-content/uploads/2016/04/Acer_Predator_G6_intro_770-2.jpg"></a>
+                            <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="https://www.3ona51.com/images/products/acer/predator-g1-710-dg-e07me-001/bl2-img2.png"><img class="img-fluid" src="https://www.3ona51.com/images/products/acer/predator-g1-710-dg-e07me-001/bl2-img2.png"></a>
+                            <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="https://static.acer.com/up/Resource/Acer/Predator_Minisite/Product_Series/Predator_G6/Photogallery/20151028/Photogallery_Predator_G6_back-right.png"><img class="img-fluid" src="https://static.acer.com/up/Resource/Acer/Predator_Minisite/Product_Series/Predator_G6/Photogallery/20151028/Photogallery_Predator_G6_back-right.png"></a>
+                        </div>
+                        <div class="col">
+                            <a class="" data-fancybox="gallery" href="https://static.acer.com/up/Resource/Acer/Predator_Minisite/Product_Series/Predator_G6/Photogallery/20151028/Photogallery_Predator_G6_front-right.png"><img class="img-fluid" src="https://static.acer.com/up/Resource/Acer/Predator_Minisite/Product_Series/Predator_G6/Photogallery/20151028/Photogallery_Predator_G6_front-right.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <h3 style="color: rgb(0, 204, 59); font-size: 45px;">&nbsp; $ 2999.99</h3>
+                    </div>
+                    <form class="w-100 row" action="">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <input class="btn btn-outline-primary" type="submit" style="font-weight: bold;" value="Add To Cart">
+                        </div>
+                    </form>
+                      <div class="col-12">
+                          <p class="font-weight-bold my-2" style="font-size: 42px; color:deepskyblue;">Options`</p>
+                      </div>
+                      <div class="col-12">
+                          <form action="">
+                              <div class="custom-control custom-switch custom-control-inline">
+                                  <input type="checkbox" id="monitor" name="customRadioInline1" class="custom-control-input">
+                                  <label class="custom-control-label" for="monitor">Monitor</label>
+                              </div>
+                              <div class="custom-control custom-switch custom-control-inline">
+                                  <input type="checkbox" id="mouse" name="customRadioInline1" class="custom-control-input">
+                                  <label class="custom-control-label" for="mouse">Mouse</label>
+                              </div>
+                              <div class="custom-control custom-switch custom-control-inline">
+                                  <input type="checkbox" id="headphone" name="customRadioInline1" class="custom-control-input">
+                                  <label class="custom-control-label" for="headphone">KeyBoard</label>
+                              </div>
+                            </form>
+                    </div>
+                    
+                </div>
+            </div><br>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        OverView
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h3>Key Features</h3>
+                        <ul class="d-none d-lg-block">
+                            <li>3.2 GHz Intel Core i9</li>
+                            <li>64GB DDR4 | 1024GB SSD</li>
+                            <li>30" 4K LED</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nulla metus. Maecenas commodo turpis dui, porttitor tincidunt enim mollis a. Curabitur eu velit mi. Nullam congue turpis id metus sollicitudin, id cursus nulla laoreet. Proin commodo eu felis at malesuada. Nulla ac facilisis justo, eget vulputate ex. Nulla nec laoreet nulla. Cras auctor leo at diam congue, quis convallis urna pulvinar. Nunc ut mi nulla. Nunc ligula massa, vulputate sed scelerisque sit amet, dapibus semper est. Sed sed blandit turpis. Vestibulum id porttitor ligula, at iaculis ligula. Pellentesque vel tellus sit amet mauris aliquet bibendum id et lorem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Rating
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Link
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card text-center">
+                            <div class="card-header">
+                              Featured
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Special Offer</h5>
+                              <p class="card-text">With supporting Windoes 10 Pro.</p>
+                              <a href="#" class="btn btn-primary">Read More...</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                              14 hours ago ago
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <hr>
+            <div class="row justify-content-center bg-light pb-4">
+                <h1 class="col-12 display-4 text-center mb-3">You Can Also Like</h1>
+                <div class="card col-12 col-lg-4 col-xl-2 text-center" style="width: 16rem; margin-left:1%;">
+                    <img style="margin-top:12.5px;" src="https://cdn.multitronic.fi/images/prod/E/B/NP.HDS1A.001-7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Acer HeadPhone</h5>
+                        <h3 class="" style="text-align: center; color: rgb(255, 53, 53);">$ 49.99</h3>
+                        <h4 class="" style="text-align: center; color: rgb(53, 117, 255); text-decoration: line-through;">$ 59.99</h4>
+                        <a href="product.html" class="btn btn-primary">Add to Card</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4 col-xl-2 text-center" style="width: 16rem; margin-left:1%;">
+                    <img style="margin-top:12.5px;" src="https://www.impulsegamer.com/articles/wp-content/uploads/2019/06/blackwidow01-620x350.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Razer KeyBoard</h5>
+                        <h3 class="" style="text-align: center; color: rgb(255, 53, 53);">$ 199.99</h3>
+                        <h4 class="" style="text-align: center; color: rgb(53, 117, 255); text-decoration: line-through;">$ 249.99</h4>
+                        <a href="product.html" class="btn btn-primary">Add to Card</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4 col-xl-2 text-center" style="width: 16rem; margin-left:1%;">
+                    <img style="margin-top:12.5px;" src="https://i.dell.com/sites/imagecontent/videos/en/PublishingImages/inspiron-27-7000-video-en.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Dell 27inch 2K</h5>
+                        <h3 class="" style="text-align: center; color: rgb(255, 53, 53);">$ 169.99</h3>
+                        <h4 class="" style="text-align: center; color: rgb(53, 117, 255); text-decoration: line-through;">$ 179.99</h4>
+                        <a href="product.html" class="btn btn-primary">Add to Card</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4 col-xl-2 text-center" style="width: 16rem; margin-left:1%;">
+                    <img style="margin-top:12.5px;" src="https://geekon.media/wp-content/uploads/2019/03/microsoft-windows-10-pro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Windows 10 Pro</h5>
+                        <h3 class="" style="text-align: center; color: rgb(255, 53, 53);">$ 39.99</h3>
+                        <h4 class="" style="text-align: center; color: rgb(53, 117, 255); text-decoration: line-through;">$ 89.99</h4>
+                        <a href="product.html" class="btn btn-primary">Add to Card</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4 col-xl-2 text-center" style="width: 16rem; margin-left:1%;">
+                    <img style="margin-top:12.5px;" src="https://cdn.mos.cms.futurecdn.net/gRaKzs9iTjuSF6ah6hjJf7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Gaming PC</h5>
+                        <h3 class="" style="text-align: center; color: rgb(255, 53, 53);">$ 959.99</h3>
+                        <h4 class="" style="text-align: center; color: rgb(53, 117, 255); text-decoration: line-through;">$ 1009.99</h4>
+                        <a href="product.html" class="btn btn-primary">Add to Card</a>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" class="bg-light">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-block" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-block" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-block" href="#">7</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-block" href="#">8</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-block" href="#">9</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-block" href="#">10</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-none d-lg-block" href="#">11</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-none d-lg-block" href="#">12</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-none d-lg-block" href="#">13</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-none d-lg-block" href="#">14</a></li>
+                  <li class="page-item"><a class="page-link d-none d-sm-none d-md-none d-lg-block" href="#">15</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </main>
+
+      <div class="d-flex justify-content-center flex-lg-row  flex-column bd-highligh">
+        <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">contact us</a>
+        <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">live Chat</a>
+        <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">shipping</a>
+        <a class="text-center flex-fill py-3 px-lg-5 border bg-light text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">terms & conditions</a>
+      </div>
+      <div class="flex-row d-lg-flex d-none">
+        <div class="flex-fill py-3 px-5 border bg-light  flex-column bd-highlight">
+          <a class="text-left text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">Group 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 3</a>
+        </div>
+        <div class="flex-fill py-3 px-5 border bg-light d-flex flex-column bd-highlight">
+          <a class="d-md-flex d-none text-left text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">Group 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 3</a>
+        </div>
+        <div class="flex-fill py-3 px-5 border bg-light d-flex flex-column bd-highlight">
+          <a class="d-md-flex d-none text-left text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">Group 3</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 3</a>
+        </div>
+        <div class="flex-fill py-3 px-5 border bg-light d-flex flex-column bd-highlight">
+          <a class="d-md-flex d-none text-left text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">Group 4</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 3</a>
+        </div>
+        <div class="flex-fill py-3 px-5 border bg-light d-flex flex-column bd-highlight">
+          <a class="d-md-flex d-none text-left text-uppercase font-weight-bold text-secondary text-decoration-none" href="#">Group 5</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 1</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 2</a>
+          <a class="d-md-flex d-none text-left text-secondary text-decoration-none" href="#">Link 3</a>
+        </div>
+      </div>
+    <!--<div class="row p-3 mb-2 bg-dark">
+      <div class="col-12 col-md-3 col-lg-3 font-weight-normal"><button type="button" class="btn btn-dark text-light font-weight-normal">CONTACT US</button></div> 
+      <div class="col-12 col-md-3 col-lg-3 font-weight-normal"><button type="button" class="btn btn-dark text-light font-weight-normal">LIVE CHAT</button></div> 
+      <div class="col-12 col-md-3 col-lg-3 font-weight-normal"><button type="button" class="btn btn-dark text-light font-weight-normal">SHIPPING</button></div> 
+      <div class="col-12 col-md-3 col-lg-3 font-weight-normal"><button type="button" class="btn btn-dark text-light font-weight-normal">TERM & CONDITIONS</button></div> 
+    </div>
+    <div class="row" style="background-color: #f8f9fa;">
+      <div class="col-sm-2 border"><button type="button" class="btn btn-light font-weight-normal d-none d-md-block">GROUP 1</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-none d-md-block border"><button type="button" class="btn btn-light">GROUP 2</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+      <div class="col-sm-2 border"><button type="button" class="btn btn-light d-none d-md-block ">GROUP 3</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+      <div class="col-sm-2 border"><button type="button" class="btn btn-light d-none d-md-block">GROUP 4</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+      <div class="col-sm-2 border"><button type="button" class="btn btn-light d-none d-md-block">GROUP 5</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light font-weight-normal">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+      <div class="col-sm-2 border"><button type="button" class="btn btn-light d-none d-md-block">GROUP 6</button>
+        <div class="d-none d-md-block"><hr class="d-none d-md-block">
+          <div><button type="button" class="btn btn-light">Link 1</button></div>
+          <div><button type="button" class="btn btn-light">Link 2</button></div>
+          <div><button type="button" class="btn btn-light">Link 3</button></div>
+        </div>
+      </div>
+    </div>-->
+    <footer class="navbar navbar-expand-md navbar-dark bg-dark">
+      <p class="d-none d-lg-block" style=" color: white; font-size: 18px;">find us on: </p>
+      <a class="navbar-brand" href="#" style="margin-left: 10px;">
+        <img src="https://coindoo.com/wp-content/uploads/2019/01/facebook-icon.png" width="40" height="40" alt="" style="margin-left: 2%;" title="facebook">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="https://mlsvc01-prod.s3.amazonaws.com/cfed4ef1201/f39fb893-cd15-4916-8158-561b0d3d166d.png" width="40" height="40" alt="" style="margin-left: 2%;" title="linked In">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/768px-Gmail_Icon.svg.png" width="40" height="40" alt="" style="margin-left: 2%;" title="GMail">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png" width="40" height="40" alt="" style="margin-left: 2%;" title="codepen.io">
+      </a>
+      <a class="navbar-brand" href="https://simmer.io">
+        <img src="data:image/jpeg;base64,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" width="40" height="40" alt="" title="simmer.io">
+      </a>
+      <a class="navbar-brand" href="https://simmer.io">
+        <img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Github-icon.png" width="40" height="40" alt="" title="github">
+      </a>
+      <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+        <input class="form-control mr-sm-2" type="search" placeholder="Your FeedBack" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Submit</button>
+      </form>
+      <p style="color: white; font-size: 18px; " class="col-12 col-sm-12 col-md-12 col-lg-3 ml-auto">&copy;Created By Vardan Davtyan</p>
+    </footer>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I'm Not a Robot</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                I'm Not a Robot
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
