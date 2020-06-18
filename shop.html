@@ -43,7 +43,7 @@
       </button>
     </nav>
     <nav class="navbar  navbar-light border-top border-bottom" >
-      <a href="home.html"><h1 class="navbar-brand" onclick="" style="font-size: 23px; color:white; padding:8px;background-color:rgb(0, 81, 128); border-radius: 7.5px; cursor:pointer;">Online Shop</h1></a>
+      <a href="index.html"><h1 class="navbar-brand" onclick="" style="font-size: 23px; color:white; padding:8px;background-color:rgb(0, 81, 128); border-radius: 7.5px; cursor:pointer;">Online Shop</h1></a>
       <form class="form-inline my-2 my-lg-0 ">
       <input class="d-none d-md-block form-control mr-sm-2" style="width:320px;" type="search" placeholder="Search Products..." aria-label="Search">
       <button class="d-none d-md-block btn btn-outline-primary my-2 my-sm-0" type="submit" style="margin-right:18px;">Search</button>
@@ -54,7 +54,8 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#regModal">Register</a>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
-          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#favorites">My Profile</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myinfo">My Info</a>
           <a class="dropdown-item "href="#">Basket</a>
           <a class="dropdown-item" href="#">Credit Card</a>
           <a class="dropdown-item" href="#">Sign Out</a>
@@ -1285,6 +1286,277 @@
   </div>
 </div>
     
+<div class="modal fade show" id="favorites" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-modal="true" style="padding-right: 17px;">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="modal-title " style="font-family: Roboto thin;" id="staticBackdropLabel">Vardan Davtyan</h2>
+          </div>
+          <div class="col-12" style="margin-top: 15px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#favorites" style="font-size:22px;">My Account</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myinfo" style="font-size:22px;">My Info</button>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<div class="row container-fluid">
+  <div class=" d-lg-block col-md-4"><br>
+    <div class="card">
+        <div class="card-header">
+          My Orders
+        </div>
+       <div class="card-body">
+         <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Order</th>
+              <th scope="col">Date</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">012102</th>
+              <td>24.18.21</td>
+              <td>$1999</td>  
+            </tr>
+            <tr>
+              <th scope="row">101879</th>
+              <td>21.12.19</td>
+              <td>$2299</td>
+            
+            </tr>
+            <tr>
+              <th scope="row">2931034</th>
+              <td>13.12.31</td>
+              <td>$250</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary" style="font-size:23px;">View All...</button>
+        </div>	
+       </div>
+    </div>
+    <div class="card" style="margin-top: 50px;">
+        <div class="card-header">
+          My Basket (3)
+        </div>
+       <div class="card-body">
+         <div class="card">
+              <div class="card-body row">
+                <a href="product.html" class="col-auto"><img src="https://www.pngkit.com/png/full/35-350936_clx-gaming-pc-kit-image-computer-case.png" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+                <div class="col-md-auto" style="margin-top: 15px;">
+                  <h5 class="card-title d-lg-block col-md-auto" style="color: red;">1999$</h5>
+                  <ul class="d-none d-lg-block">
+                    <li>3.2 GHz Intel Core i9</li>
+                    <li>64GB DDR4 | 1024GB SSD</li>
+                    <li>30" 4K LED</li>
+                </ul>
+              </div>
+            
+              </div>
+            </div><br><div class="card">
+              <div class="card-body row">
+                <a href="product.html" class="col-auto"><img src="https://apple-store.net.ru/image/cache/catalog/tovary/macbook/imac/imac-pro-27-2019-5k-retina-2tb-serebristiy-800x800.jpg" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+                <div class="col-md-auto" style="margin-top: 15px;">
+                  <h5 class="card-title d-lg-block col-md-auto" style="color: red;">2999$</h5>
+                  <ul class="d-none d-lg-block">
+                    <li>3.2 GHz Intel Core i9</li>
+                    <li>64GB DDR4 | 1024GB SSD</li>
+                    <li>30" 4K LED</li>
+                </ul>
+                
+              </div>
+            
+              </div>
+            </div><br>
+        </table>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary" style="font-size:23px;">View All...</button>
+        </div>	
+       </div>
+    </div>
+  </div>
+
+  <div class="row col-12 col-md-8  d-none d-md-block">
+    <h2 class="display-5 text-center" style="color: rgb(0, 89, 255);">Recent Activity</h2>
+  
+    <div class="card">
+      <div class="card-body row">
+        <a href="product.html" class="col-6"><img src="https://www.overclockers.co.uk/media/image/thumbnail/FS1DHOG_210081_750x750.png" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+        <div class="col-lg-6">
+          <h5 class="card-title d-lg-block col-6" style="color:green;" >$2999.99</h5>
+          <ul class="d-none d-lg-block">
+            <li>3.2 GHz Intel Core i9</li>
+            <li>64GB DDR4 | 1024GB SSD</li>
+            <li>30" 4K LED</li>
+        </ul>
+          <a href="product.html" class="btn btn-outline-primary col-6" style="font-size:22px;">Add To Card</a>
+      </div>
+    
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body row">
+        <a href="product.html" class="col-6"><img src="https://andreasgamingpcwarehouseftwayne.com/x/cdn/?https://storage.googleapis.com/wzukusers/user-18291515/images/dfe4d9c1da774e54a35e9c6c3a4aebf1/11021084_20.png" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+        <div class="col-lg-6">
+          <h5 class="card-title d-lg-block col-6" style="color:green;" >$1999.99</h5>
+          <ul class="d-none d-lg-block">
+            <li>3.2 GHz Intel Core i9</li>
+            <li>64GB DDR4 | 1024GB SSD</li>
+            <li>30" 4K LED</li>
+          </ul>
+          <a href="product.html" class="btn btn-outline-primary col-6" style="font-size:22px;">Add To Card</a>
+      </div>
+    
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body row">
+        <a href="product.html" class="col-6"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Avalanche_Hardline_Liquid_Cooled_Gaming_PC.png" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+        <div class="col-lg-6">
+          <h5 class="card-title d-lg-block col-6" style="color:green;" >$2499.99</h5>
+          <ul class="d-none d-lg-block">
+            <li>3.2 GHz Intel Core i9</li>
+            <li>64GB DDR4 | 1024GB SSD</li>
+            <li>30" 4K LED</li>
+        </ul>
+        <a href="product.html" class="btn btn-outline-primary col-6" style="font-size:22px;">Add To Card</a>
+      </div>
+    
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body row">
+        <a href="product.html" class="col-6"><img src="https://www.pngkit.com/png/full/35-350936_clx-gaming-pc-kit-image-computer-case.png" style="float: left;margin-right: 200px;" class="img-fluid"></a>
+        <div class="col-lg-6">
+          <h5 class="card-title d-lg-block col-6" style="color:green;" >$1299.99</h5>
+          <ul class="d-none d-lg-block">
+            <li>3.2 GHz Intel Core i9</li>
+            <li>64GB DDR4 | 1024GB SSD</li>
+            <li>30" 4K LED</li>
+        </ul>
+          <a href="product.html" class="btn btn-outline-primary col-6" style="font-size:22px;">Add To Card</a>
+      </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade show" id="myinfo"  tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-modal="true" style="padding-left: 17px;">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="modal-title " style="font-family: Roboto thin;" id="staticBackdropLabel">Vardan Davtyan</h2>
+          </div>
+          <div class="col-12" style="margin-top: 15px;">
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#favorites" style="font-size:22px;">My Account</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myinfo" style="font-size:22px;">My Info</button>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="card">
+          <div class="card-header">
+             <h3 style="color: rgb(0, 89, 255);">Account Detalis</h3>
+          </div>
+          <div class="card-body">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Account Information</th>
+                    <td>Change Your Details</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Vardan Davtyan</th>
+                    <td><a href="#" style="text-decoration: none;">Change</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">vardan.davtyan.y@tumo.org</th>
+                    <td><a href="#" style="text-decoration: none;">Change</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">***********</th>
+                    <td><a href="#" style="text-decoration: none;">Change</a></td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+      </div><br>
+      <div class="card">
+          <div class="card-header">
+             <h5 style="color: rgb(0, 89, 255);">Billing And Shipping</h5>
+          </div>
+          <div class="card-body">
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                        <h6>Vardan Davtyan | Antarctida | New York | NY st.12</h6>
+                      <br>
+                      <hr>
+                    </th>
+                    <td><a href="#" style="text-decoration: none;">Change </a> | <a href="" style="text-decoration: none;"> Remove</a></td>
+                  </tr>
+                   <tr>
+                    <th scope="row">
+                        <h6>Vardan Davtyan | Antarctida | New York | NY st.12</h6>
+                      <br>
+                      <hr>
+                    </th>
+                    <td><a href="#" style="text-decoration: none;">Change </a> | <a href="" style="text-decoration: none;"> Remove</a></td>
+                  </tr>
+                   <tr>
+                    <th scope="row">
+                        <h6>Vardan Davtyan | Antarctida | New York | NY st.12</h6>
+                      <br>
+                      <hr>
+                    </th>
+                    <td><a href="#" style="text-decoration: none;">Change </a> | <a href="" style="text-decoration: none;"> Remove</a></td>
+                  </tr>
+                   <tr>
+                    <th scope="row">
+                        <h6>Vardan Davtyan | Antarctida | New York | NY st.12</h6>
+                      <br>
+                      <hr>
+                    </th>
+                    <td><a href="#" style="text-decoration: none;">Change </a> | <a href="" style="text-decoration: none;"> Remove</a></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+      </div><br>
+      <div class="card">
+          <div class="card-header">
+             <h3 style="cursor:pointer; color: rgb(0, 89, 255);">Credit Card Options</h3>
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
